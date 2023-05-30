@@ -239,11 +239,11 @@ data() {
       },
       async fetch() {
         this.cptpost = await fetch(
-          'http://nuxtwp.local/wp-json/acf/v3/cptpost'
+          '#/wp-json/acf/v3/#t'
         ).then(res => res.json())
       }
     
-    //http://nuxtwp.local/wp-json/acf/v3/cptpost
+    //#
 
 
   };
