@@ -24,9 +24,9 @@
       },
       async fetch() {
         this.cptpost = await fetch(
-          'http://nuxtwp.local/wp-json/acf/v3/cptpost?per_page=3'
+          '#?per_page=3'
         ).then(res => res.json())
       }
     }
-    //http://nuxtwp.local/wp-json/acf/v3/cptpost?per_page=3
+    //#?per_page=3
   </script>
