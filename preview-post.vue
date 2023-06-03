@@ -1,4 +1,5 @@
-   <template>
+// _slug/index.vue
+<template>
      <div>
        <h1>All Posts</h1>
        <ul>
@@ -9,3 +10,13 @@
      </div>
    </template>
 //---------------------
+   <script>
+   export default {
+     async asyncData({ params, $axios }) {
+       const { slug } = params;
+       const post = await $axios.$get(`/api/posts/${slug}`);
+       return { post };
+     },
+   };
+   </script>
+//--------------------------
