@@ -187,7 +187,7 @@ import { Script } from 'vm';
 
   async fetch() {
 
-    const response = await this.$axios.$get(`http://nuxtwp.local/wp-json/acf/v3/cptpost/${id}`)
+    const response = await this.$axios.$get(`http://nuxtwp.local/wp-json/acf/v3/cptpost/${this.$route.params.id}`)
     this.pimage = response.acf.pimage
     this.ptext = response.acf.ptext
     this.ptextarea = response.acf.ptextarea
@@ -200,10 +200,7 @@ import { Script } from 'vm';
     }
   }
 
-
-
-/* const iid = this.$route.query.id
- */  };
+ };
   </Script>
 
  

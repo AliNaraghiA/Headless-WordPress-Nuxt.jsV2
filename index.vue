@@ -95,7 +95,7 @@
             <img :src="cptpos.acf.pimage.url" alt="cptpos.acf.pimage.alt" data-aos="zoom-in" />
             <div class="d-flex flex-column justify-content-between">
               <div class="titleAndText">
-                <nuxt-link :to="`/${cptpos.id}`">
+                <nuxt-link :to="`/post/${cptpos.id}`">
                   <h3 class="title"> {{ cptpos.acf.ptext}}</h3>  
                 </nuxt-link>
   
